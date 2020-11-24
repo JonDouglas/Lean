@@ -146,6 +146,8 @@ If after all you still receive connection refuse error, try changing the `ib-por
 
 Nuget packages not being restored is the most common build issue. By default Visual Studio includes NuGet, if your installation of Visual Studio (or your IDE) cannot find DLL references, install [Nuget](https://www.nuget.org/), run nuget on the solution and re-build the Solution again. 
 
+Ensure that your `packages/` folder is created in the solution directory and use `nuget restore <Solution Path>.sln -Force -PackagesDirectory <Solution Directory>` if necessary.
+
 ### Python Support
 
 A full explanation of the Python installation process can be found in the [Algorithm.Python](https://github.com/QuantConnect/Lean/tree/master/Algorithm.Python#quantconnect-python-algorithm-project) project.
